@@ -9,5 +9,5 @@ RUN yum -y upgrade && \
     echo "b516630a940d83b066cf1e6479ec59fe  jdk-7u80-linux-x64.rpm" >> MD5SUM && \
     md5sum -c MD5SUM && \
     rpm -Uvh jdk-7u80-linux-x64.rpm && \
-    yum -y remove wget && \
+    yum -y clean all && \
     rm -f jdk-7u80-linux-x64.rpm MD5SUM
